@@ -1,17 +1,23 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile:
-        path: bash_profile
-    ~/.gitconfig:
-        path: gitconfig
+    ~/.bash_profile: bash_profile
+    ~/.gitconfig: gitconfig
+    #zsh/prezto
+    ~/.zprezto: prezto
+    ~/.zlogin: prezto/runcoms/zlogin
+    ~/.zlogout: prezto/runcoms/zlogout
+    ~/.zpreztorc: prezto/runcoms/zpreztorc
+    ~/.zprofile: prezto/runcoms/zprofile
+    ~/.zshenv: prezto/runcoms/zshenv
+    ~/.zshrc: prezto/runcoms/zshrc
 
 - create:
     - ~/projects
     - ~/downloads
 
 - shell:
-    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh-bin/master/install) -q -d ~/.local -e yes", Installing zsh-bin and setting it as default shell]
+    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh-bin/master/install)" -q -d ~/.local -e yes, Installing zsh-bin and setting it as default shell]
 
 - defaults:
     link:
