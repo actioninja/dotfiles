@@ -1,0 +1,30 @@
+[user]
+	email = actioninja@gmail.com
+	name = actioninja
+[color]
+	ui = auto
+[core]
+	excludesFile = ~/.gitignore_global
+	whitespace = -trailing-space
+[diff]
+	mnemonicPrefix = true
+	renames = true
+[grep]
+	break = true
+	heading = true
+	lineNumber = true
+	extendedRegexp = true
+[pull]
+	rebase = merges
+[status]
+	submoduleSummary = true
+	showUntrackedFiles = all
+[color "branch"]
+	upstream = cyan
+[versionsort]
+	prereleaseSuffix = -pre
+	prereleaseSuffix = .pre
+	prereleaseSuffix = -beta
+	prereleaseSuffix = .beta
+	prereleaseSuffix = -rc
+	prereleaseSuffix = .rc
