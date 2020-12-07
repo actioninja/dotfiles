@@ -3,13 +3,18 @@
 - link:
     ~/.bash_profile:
         path: bash_profile
-        create: false
-        relink: false
-        force: false
     ~/.gitconfig:
         path: gitconfig
-        create: false
-        relink: false
-        force: false
 
+- create:
+    - ~/projects
+    - ~/downloads
+
+- shell:
+    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh-bin/master/install) -q -d ~/.local -e yes", Installing zsh-bin and setting it as default shell]
+
+- defaults:
+    link:
+        create: true
+        relink: true
 
