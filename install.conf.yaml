@@ -3,6 +3,7 @@
 - link:
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore
     #zsh/prezto
     ~/.zprezto: prezto
     ~/.zlogin: prezto/runcoms/zlogin
