@@ -17,9 +17,6 @@
     - ~/projects
     - ~/downloads
 
-- shell:
-    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh-bin/master/install)" -q -d ~/.local -e yes, Installing zsh-bin and setting it as default shell]
-
 - defaults:
     link:
         create: true
