@@ -8,5 +8,6 @@
 	url = git@github.com:actioninja/prezto.git
 [submodule "nvim-conf"]
 	path = nvim-conf
+	branch = "master"
 	url = git@github.com:actioninja/nvim-conf.git
 	branch = master
