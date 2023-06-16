@@ -126,3 +126,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# I almost never want to include jetbrains specific nonsense
+.idea/

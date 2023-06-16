@@ -6,6 +6,8 @@
 [core]
 	excludesFile = ~/.gitignore_global
 	whitespace = -trailing-space
+	autocrlf = false
+	eol = lf
 [diff]
 	mnemonicPrefix = true
 	renames = true
