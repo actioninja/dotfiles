@@ -45,7 +45,7 @@ require("lazy").setup({
   {
     "lukas-reineke/indent-blankline.nvim",
     config = function()
-      require("indent_blankline").setup{char_highlight_list={'IndentBlankLine'}}
+      require("indent_blankline").setup{}
     end
   },
   {
@@ -62,6 +62,7 @@ require("lazy").setup({
   },
   {
     "j-hui/fidget.nvim",
+    tag = "legacy",
     config = function()
       require("fidget").setup{
         text = {
