@@ -1,0 +1,6 @@
+---
+actions:
+  - action: file.link
+    from: fish
+    template: true
+    to: '{{user.config_dir}}/fish'
