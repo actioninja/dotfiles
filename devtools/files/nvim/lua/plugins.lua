@@ -76,7 +76,7 @@ require("lazy").setup({
     build = ":TSUpdate",
     config = function()
       require'nvim-treesitter.configs'.setup {
-        ensure_installed = "all",
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "astro", "cmake", "css", "csv", "diff", "dockerfile", "fish", "git_config", "git_rebase", "gitattributes", "gitignore", "gitcommit", "html", "java", "javascript", "json", "json5", "markdown", "markdown_inline", "meson", "ninja", "nix", "python", "ron", "rust", "scss", "slint", "toml", "typescript", "tsx", "xml", "yaml", "zig" },
 
         highlight = {
           enable = true,
