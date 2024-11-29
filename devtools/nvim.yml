@@ -3,7 +3,6 @@ actions:
   - action: file.link
     from: nvim
     to: '{{user.data_local_dir}}/nvim'
-    template: true
     variants:
       - where: os.name == "linux"
         from: nvim
