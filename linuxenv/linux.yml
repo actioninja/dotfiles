@@ -1,0 +1,8 @@
+---
+actions:
+  - action: command.run
+    where: os.name == "linux"
+    command: echo
+    args:
+      - hello, linux!
+
