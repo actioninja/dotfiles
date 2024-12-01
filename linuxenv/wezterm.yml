@@ -1,0 +1,6 @@
+---
+actions:
+  - action: file.link
+    where: os.name == "linux"
+    from: wezterm
+    to: '{{user.config_dir}}/wezterm'
