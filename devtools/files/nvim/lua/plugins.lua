@@ -28,6 +28,14 @@ require("lazy").setup({
   "tpope/vim-fugitive",
   "tpope/vim-repeat",
   "tpope/vim-sleuth",
+  {
+    "lambdalisue/vim-suda",
+    config = function()
+      vim.g.suda_smart_edit = 1
+
+      vim.keymap.set("c", "w!!", ":SudaWrite<CR>")
+    end
+  },
   "RRethy/vim-illuminate",
   {
     "kevinhwang91/nvim-bqf",
