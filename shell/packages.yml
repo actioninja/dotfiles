@@ -4,6 +4,7 @@ actions:
     provider: paru
     list:
       - 1password
+      - 1password-cli
       - bat
       - neovim
       - exa
@@ -16,3 +17,5 @@ actions:
       - lolcat
       - httpie
       - carapace-bin
+      - sccache
+      - direnv
