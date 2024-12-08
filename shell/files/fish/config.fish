@@ -14,3 +14,5 @@ set fish_cursor_visual      block
 
 set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense'
 carapace _carapace fish | source
+
+direnv hook fish | source

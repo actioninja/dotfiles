@@ -94,4 +94,9 @@ require("lazy").setup({
       }
     end
   },
+  {
+    'LhKipp/nvim-nu',
+    build = ':TSInstall nu',
+    opts = {}
+  },
 })
