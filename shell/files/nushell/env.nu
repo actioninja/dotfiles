@@ -73,11 +73,39 @@ $env.ENV_CONVERSIONS = {
     }
 }
 
+$env.CARGO_HOME = ($env.HOME | path join ".cargo")
+
+
+# Basic defaults, because some programs do not fallback properly
+$env.XDG_DATA_HOME = ($env.HOME | path join ".local" "share")
+$env.XDG_CONFIG_HOME = ($env.HOME | path join ".config")
+$env.XDG_STATE_HOME = ($env.HOME | path join ".local" "state")
+$env.XDG_CACHE_HOME = ($env.HOME | path join ".cache")
+
+$env.NUPM_HOME = ($env.XDG_DATA_HOME | path join "nupm")
+
+$env.EDITOR = "nvim"
+
+# To add entries to PATH (on Windows you might use Path), you can use the following pattern:
+# $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
+# An alternate way to add entries to $env.PATH is to use the custom command `path add`
+# which is built into the nushell stdlib:
+use std "path add"
+$env.PATH = ($env.PATH | split row (char esep))
+path add /some/path
+path add ($env.CARGO_HOME | path join "bin")
+path add ($env.HOME | path join ".local" "bin")
+path add ($env.NUPM_HOME | path join "scripts")
+$env.PATH = ($env.PATH | uniq)
+
+
+
 # Directories to search for scripts when calling source or use
 # The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
     ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
     ($nu.data-dir | path join 'completions') # default home for nushell completions
+    ($env.NUPM_HOME | path join "modules")
 ]
 
 # Directories to search for plugin binaries when calling register
@@ -86,16 +114,6 @@ $env.NU_PLUGIN_DIRS = [
     ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]
 
-# To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-# $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
-# An alternate way to add entries to $env.PATH is to use the custom command `path add`
-# which is built into the nushell stdlib:
-# use std "path add"
-# $env.PATH = ($env.PATH | split row (char esep))
-# path add /some/path
-# path add ($env.CARGO_HOME | path join "bin")
-# path add ($env.HOME | path join ".local" "bin")
-# $env.PATH = ($env.PATH | uniq)
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')

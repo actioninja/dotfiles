@@ -293,7 +293,9 @@ $env.config = {
     }
 
     hooks: {
-        pre_prompt: [{ null }] # run before the prompt is shown
+        pre_prompt: [
+            (source hooks/direnv.nu)
+        ] # run before the prompt is shown
         pre_execution: [{ null }] # run before the repl input is run
         env_change: {
             PWD: [{|before, after| null }] # run if the PWD environment is different since the last repl input
@@ -897,3 +899,5 @@ $env.config = {
         }
     ]
 }
+
+use nupm/nupm
