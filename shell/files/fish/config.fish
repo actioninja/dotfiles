@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 function fish_greeting
-	fortune -a | cowsay | lolcat
+    cowfortune
 end
 
 fish_vi_key_bindings
