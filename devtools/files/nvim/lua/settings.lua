@@ -93,3 +93,5 @@ autocmd("Filetype", {
 vim.opt.grepprg = "rg --vimgrep"
 vim.opt.grepformat = "%f:%l:%c:%m"
 
+-- OTHER STUFF --
+vim.g.editorconfig = true
