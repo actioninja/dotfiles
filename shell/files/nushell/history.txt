@@ -1,0 +1,163 @@
+nvim
+nvim ~/.config/nushell/config.nu
+cd ~
+nvim ~/.config/nvim/lua/plugins.lua
+nvim ~/.config/nushell/config.nu
+nvim ~/.config/nvim/lua/plugins.lua
+ls
+rm
+ls
+exit
+ls
+$env.config.table.mode = basic
+$env.config.table.mode = "basic"
+ls
+$env.config.table.mode = "compact"
+ls
+$env.config.table.mode = "compact_double"
+ls
+$env.config.table.mode = "light"
+ls
+$env.config.table.mode = "thin"
+ls
+$env.config.table.mode = "with_love"
+ls
+$env.config.table.mode = "rounded"
+ls
+$env.config.table.mode = "reinforced"
+ls
+$env.config.table.mode = "heavy"
+ls
+$env.config.table.mode = "none"
+ls
+$env.config.table.mode = "other"
+$env.config.table.mode = "psql"
+ls
+$env.config.table.mode = "markdown"
+ls
+$env.config.table.mode = "dots"
+ls
+$env.config.table.mode = "resturctured"
+$env.config.table.mode = "restructured"
+ls
+$env.config.table.mode = "ascii_rounded"
+ls
+$env.config.table.mode = "basic_compat"
+$env.config.table.mode = "basic_compact"
+ls
+$env.config.table.mode = "rounded"
+ls
+ls -la
+ls --help
+ls -la
+ls -lat
+ls -latt
+ls -lattt
+ls -la
+ls -lad
+sudo systemctl enable docker
+sudo systemctl start docker
+ls
+steam
+nupm
+nupm install
+nupm install --help
+nupm --help
+exit
+ls
+exit
+ls
+cd projects
+ls
+cd hell-infra/
+ls
+cd ..
+ls
+cd hell
+ls
+direnv allow
+python 3 -m venv $env.VIRTUAL_ENV
+python
+python -m venv $env.VIRTUAL_ENV
+cd ..
+cd hell-infra/
+op list
+op vault list
+flux
+flux check --pre
+mike
+kind
+kind create
+kind create devhell
+kind create cluster
+kind create cluster --help
+kind create cluster -n devhell
+flux check --pre
+flux bootstrap
+nvim ~/.config/nushell/config.nu 
+sudo pacman -S minikube
+kind destroy cluster -n devhell
+kind destroy cluster
+kind delete cluster
+kind delete cluster -n devhell
+minikube start
+minikube status
+minikube stop
+minikube help
+minikube start help
+minikube help start
+minikube start
+kubectl get nodes
+nvim ~/.kubectl
+nvim ~/.kubeconfig
+kubectl get kubeconfig
+kubectl get
+kubectl --help
+kubectl create deployment nginx-depl --image=nginx
+kubectl get pod
+kubectl get replicaset
+kubectl edit deployment nginx-depl
+$env.EDITOR
+nvim ~/.config/nushell/env.nu
+exit
+cd ~/projects/hell-infra
+ls
+kubectl edit deployment nginx-depl
+kubectl get
+kubectl get pods
+kubectl logs
+kubectl logs pods
+kubectl logs nginx-
+carapace
+exit
+for $x
+ls
+nvim ~/.config/nushell/env.nu
+ls
+exit
+ls
+ls -help
+ls -h
+ls
+ls | where type = dir
+ls | where type =- dir
+ls | where type == dir
+ls | where type == dir | each {|dir|}
+ls | where type == dir | each {|dir| $"(kv)"}
+ls | where type == dir | each {|dir| $"(dir)"}
+ls | where type == dir | each {|kv| $"(kv)"}
+ls | where type == dir | each {|kv| $"kv"}
+for dir in (ls | where type == dir) {}
+for dir in (ls | where type == dir) { echo $dir.name}
+ls | where type == dir
+for dir in (ls | where type == dir) { echo $dir.name }
+ls | where type == dir | each {|entry| $"tochd ./$entry.name"}
+ls | where type == dir | each {|entry| $"tochd ./($entry.name)"}
+ls | where type == dir | each {|entry| $"tochd \"./($entry.name)\""}
+ls | where type == dir | each {|entry| $"tochd \"./($entry.name)/($entry.name).cue\""}
+for command in (ls | where type == dir | each {|entry| $"tochd \"./($entry.name)/($entry.name).cue\""}) { ^$"($command)" }
+tochd
+for command in (ls | where type == dir | each {|entry| $"tochd \"./($entry.name)/($entry.name).cue\""}) { ^$"bash -c "($command)"" }
+for command in (ls | where type == dir | each {|entry| $"tochd \"./($entry.name)/($entry.name).cue\""}) { ^$"($command)" }
+for command in (ls | where type == dir | each {|entry| $"tochd \"./($entry.name)/($entry.name).cue\""}) { ^$"/usr/bin/($command)" }
+exit

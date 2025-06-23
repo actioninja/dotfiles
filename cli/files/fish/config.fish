@@ -15,8 +15,8 @@ set fish_cursor_visual      block
 set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense'
 carapace _carapace fish | source
 
-mise activate fish | source
-
 set sponge_purge_only_on_exit true
 
 test -r $__fish_config_dir/dircolors; and eval (dircolors $__fish_config_dir/dircolors | sed 's/^LS_COLORS=/set -x LS_COLORS /; s/;$//')
+
+mise activate fish | source
