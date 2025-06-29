@@ -15,10 +15,6 @@ set fish_cursor_visual      block
 set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense'
 carapace _carapace fish | source
 
-direnv hook fish | source
-
-pyenv init - fish | source
-
 mise activate fish | source
 
 set sponge_purge_only_on_exit true

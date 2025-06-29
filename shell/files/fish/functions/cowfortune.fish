@@ -1,3 +1,3 @@
-function cowfortune --wraps='fortune -a | cowsay | lolcat -t'
-  fortune -a | cowsay | lolcat -t
+function cowfortune --wraps='fortune -a | cowsay | lolcat -b'
+  fortune -a | cowsay | lolcat -b
 end
