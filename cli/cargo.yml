@@ -6,6 +6,6 @@ actions:
       - -p
       - '{{user.home_dir}}/.cargo'
   - action: file.link
-    from: cargo/config.toml.notatoml
+    from: cargo/config.toml
     to: '{{user.home_dir}}/.cargo/config.toml'
   

@@ -1,9 +1,0 @@
----
-actions:
-  - action: file.link
-    from: nvim
-    to: '{{user.data_local_dir}}/nvim'
-    variants:
-      - where: os.name == "linux"
-        from: nvim
-        to: '{{user.config_dir}}/nvim'

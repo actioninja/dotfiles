@@ -3,8 +3,6 @@ actions:
   - action: package.install
     provider: paru
     list:
-      - 1password
-      - 1password-cli
       - bat
       - neovim
       - exa
