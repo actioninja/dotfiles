@@ -1,16 +1,9 @@
 ---
 actions:
   - action: file.link
-    to: '{{user.home_dir}}/.gitconfig_master'
+    to: '{{user.home_dir}}/.gitconfig'
     from: git/.gitconfig
   - action: file.link
     to: '{{user.home_dir}}/.gitignore_global'
     from: git/.gitignore_global
-  - action: file.copy
-    from: git/.gitconfig_win
-    to: '{{user.home_dir}}/.gitconfig'
-    variants:
-      - where: os.name == "linux"
-        from: git/.gitconfig_lin
-        to: '{{user.home_dir}}/.gitconfig'
 
