@@ -1,4 +1,7 @@
+[settings]
+activate_aggressive = true
+pin = true
+
 [tools]
-1password = "latest"
-just = "latest"
+jujutsu = "0.31.0"
 usage = "latest"
