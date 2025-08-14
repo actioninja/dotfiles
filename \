@@ -1,23 +1,57 @@
 [user]
 	email = actioninja@criticalaction.net
 	name = actioninja
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
 [color]
 	ui = auto
+[tag]
+	sort = version:refname
 [core]
 	excludesFile = ~/.gitignore_global
 	whitespace = -trailing-space
 	autocrlf = false
 	eol = lf
+[init]
+	defaultBranch = main
+[commit]
+	verbose = true
 [diff]
+	algorithm = histogram
+	colorMoved = plain
 	mnemonicPrefix = true
 	renames = true
+[feature]
+	experimental = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
 [grep]
 	break = true
 	heading = true
 	lineNumber = true
+	patterntype = perl
 	extendedRegexp = true
+[help]
+	autocorrect = prompt
+[merge]
+	conflictstyle = zdiff3
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
 [pull]
 	rebase = merges
+[rebase]
+	autosquash = true
+	autostash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
 [status]
 	submoduleSummary = true
 	showUntrackedFiles = all

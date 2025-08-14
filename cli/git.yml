@@ -1,9 +1,6 @@
 ---
 actions:
   - action: file.link
-    to: '{{user.home_dir}}/.gitconfig'
-    from: git/.gitconfig
-  - action: file.link
-    to: '{{user.home_dir}}/.gitignore_global'
-    from: git/.gitignore_global
+    to: '{{user.config_dir}}/git'
+    from: git
 
