@@ -3,12 +3,12 @@ function fish_prompt
     
         set -l normal (set_color normal)
         set -l usercolor (set_color $fish_color_user)
+        
+        set -l separator \UE0B4
     
-        set -l delim \U25BA
-        # If we don't have unicode use a simpler delimiter
-        string match -qi "*.utf-8" -- $LANG $LC_CTYPE $LC_ALL; or set delim ">"
+        set -l delim " \$ "
     
-        fish_is_root_user; and set delim "#"
+        fish_is_root_user; and set delim " # "
     
         set -l cwd (set_color $fish_color_cwd)
         if command -sq cksum
@@ -33,7 +33,7 @@ function fish_prompt
     
         # Prompt status only if it's not 0
         set -l prompt_status
-        test $last_status -ne 0; and set prompt_status (set_color $fish_color_status)"[$last_status]$normal"
+        test $last_status -ne 0; and set prompt_status (set_color $fish_color_status)" [$last_status]$normal"
     
         # Only show host if in SSH or container
         # Store this in a global variable because it's slow and unchanging
@@ -51,5 +51,5 @@ function fish_prompt
         # Shorten pwd if prompt is too long
         set -l pwd (prompt_pwd)
     
-        echo -n -s $prompt_host $cwd $pwd $normal $prompt_status $delim
+        echo -n -s $prompt_host $pwd $normal " " $separator $delim $separator " " $prompt_status
 end
