@@ -3,6 +3,7 @@ function _tide_remove_unusable_items
     set -l removed_items
     for item in aws bun crystal direnv distrobox docker elixir gcloud git go java kubectl nix_shell node php pulumi python ruby rustc terraform toolbox zig
         contains $item $tide_left_prompt_items $tide_right_prompt_items || continue
+        #        type --query $mise || continue
 
         set -l cli_names $item
         switch $item
