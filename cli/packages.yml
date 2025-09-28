@@ -3,17 +3,7 @@ actions:
   - action: package.install
     provider: paru
     list:
-      - bat
       - neovim
-      - exa
-      - dog
-      - ripgrep
-      - fd
-      - jq
       - fortune-mod
       - cowsay      
       - lolcat
-      - httpie
-      - carapace-bin
-      - sccache
-      - direnv
