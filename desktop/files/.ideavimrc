@@ -1,0 +1,28 @@
+let mapleader=" "
+" some useful defaults
+set clipboard=unnamedplus
+set history=200
+set showcmd
+set scrolloff=8
+set sidescrolloff=8
+set incsearch
+set nrformats-=octal
+map Q gq
+nnoremap <silent> <C-L> :nohlsearch<CR>
+
+set hlsearch
+set ignorecase
+set smartcase
+
+set showmode
+
+set number
+set relativenumber
+
+"ideavim plugins
+
+set ideajoin
+set easymotion
+set highlightedyank
+set surround
+set commentary
