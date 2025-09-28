@@ -1,6 +1,7 @@
 [settings]
 activate_aggressive = true
 pin = true
+idiomatic_version_file_enable_tools = ["python"]
 
 [tools]
 jujutsu = "0.31.0"
