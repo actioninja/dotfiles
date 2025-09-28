@@ -1,5 +1,11 @@
 ---
+depends:
+  - cli.bins
 actions:
   - action: file.link
     from: mise
     to: '{{user.config_dir}}/mise'
+  - action: command.run
+    command: mise
+    args:
+      - install
