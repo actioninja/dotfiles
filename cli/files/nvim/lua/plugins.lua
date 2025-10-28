@@ -28,6 +28,10 @@ require("lazy").setup({
       vim.cmd.colorscheme("selenized")
     end
   },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
   -- git commands
   "tpope/vim-fugitive",
   -- Dependency for cleaner command repeating
@@ -136,7 +140,7 @@ require("lazy").setup({
     },
     init = function()
       vim.g.coq_settings = {
-          auto_start = true, -- if you want to start COQ at startup
+          auto_start = 'shut-up', -- if you want to start COQ at startup
           -- Your COQ settings here
       }
     end,
