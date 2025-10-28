@@ -13,7 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
-    "arcticicestudio/nord-vim",
+    "loganswartz/selenized.nvim",
+    dependencies = {
+      "rktjmp/lush.nvim",
+    },
     lazy = false,
     priority = 1000,
     config = function()
@@ -22,7 +25,7 @@ require("lazy").setup({
 
       vim.cmd.syntax("on")
       vim.cmd.filetype("plugin indent on")
-      vim.cmd.colorscheme("nord")
+      vim.cmd.colorscheme("selenized")
     end
   },
   -- git commands
