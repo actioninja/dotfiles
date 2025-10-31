@@ -95,3 +95,17 @@ vim.opt.grepformat = "%f:%l:%c:%m"
 
 -- OTHER STUFF --
 vim.g.editorconfig = true
+
+-- neovide settings
+if vim.g.neovide then
+  vim.g.neovide_scroll_animation_length = 0.1
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_cursor_animate_in_insert_mode = true
+  vim.opt.guicursor = {
+    "n-v-c:block-blinkwait700-blinkon400-blinkoff250",  -- Normal, Visual, Command-line: block cursor, blinking
+    "i-ci-ve:ver25-blinkwait700-blinkon400-blinkoff250", -- Insert, Command-line insert, Visual-excl: vertical bar blinking
+    "r-cr:hor20",  -- Replace modes: horizontal bar
+    "o:hor50"      -- Operator-pending mode
+  }
+end
+
