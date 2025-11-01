@@ -28,12 +28,6 @@ require("lazy").setup({
       vim.cmd.colorscheme("selenized")
     end
   },
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
-  },
-  -- git commands
-  "tpope/vim-fugitive",
   -- Dependency for cleaner command repeating
   "tpope/vim-repeat",
   -- Automtically adjust some stuff like tabstops and the like
@@ -47,8 +41,6 @@ require("lazy").setup({
       vim.keymap.set("c", "w!!", ":SudaWrite<CR>")
     end
   },
-  -- Automatically highlight what is under the cursor
-  "RRethy/vim-illuminate",
   -- better quickfix window
   "kevinhwang91/nvim-bqf",
   -- fzf support
@@ -74,10 +66,6 @@ require("lazy").setup({
   },
   -- git gutter signs
   "lewis6991/gitsigns.nvim",
-  -- hex color highlighter plugin
-  "norcalli/nvim-colorizer.lua",
-  -- LSP Status indicator
-  "j-hui/fidget.nvim",
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -91,8 +79,7 @@ require("lazy").setup({
     }
   },
   {
-    'LhKipp/nvim-nu',
-    build = ':TSInstall nu',
+    "ejrichards/mise.nvim",
     opts = {}
   },
   {
@@ -103,6 +90,8 @@ require("lazy").setup({
       "ryanoasis/vim-devicons",
     },
     config = function()
+      vim.keymap.set("n", "<Leader><tab>", "<Cmd>CHADopen<CR>", { silent = true, desc = "Open Chadtree" })
+
       vim.api.nvim_create_autocmd("StdinReadPre", {
         callback = function()
           vim.g.std_in = 1
@@ -191,22 +180,6 @@ require("lazy").setup({
     end,
   },
   {
-    "mhartington/formatter.nvim",
-    opts = function()
-
-    end
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = { "lua", "markdown", "nix" },
-      auto_install = true,
-      highlight = {
-        enable = true,
-      },
-    },
-  },
-  {
     "folke/flash.nvim",
     event = "VeryLazy",
     ---@type Flash.Config
@@ -219,4 +192,62 @@ require("lazy").setup({
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   },
+  { 'nvim-mini/mini.ai', version = '*', opts = {}, },
+  { 'nvim-mini/mini.align', version = '*', opts = {}, },
+  { 'nvim-mini/mini.bracketed', version = '*', opts = {}, },
+  { 'nvim-mini/mini.bufremove', version = '*', opts = {}, },
+  {
+    'nvim-mini/mini.clue',
+    version = '*',
+    opts = {
+      triggers = {
+        -- Leader triggers
+        { mode = 'n', keys = '<Leader>' },
+        { mode = 'x', keys = '<Leader>' },
+      },
+    },
+  },
+  { 'nvim-mini/mini.comment', version = '*', opts = {}, },
+  { 'nvim-mini/mini.cursorword', version = '*', opts = {}, },
+  { 'nvim-mini/mini.extra', version = '*', opts = {}, },
+  { 'nvim-mini/mini.fuzzy', version = '*', opts = {}, },
+  { 'nvim-mini/mini-git', version = '*', opts = {}, },
+  { 'nvim-mini/mini.hipatterns', version = '*', config = function()
+    local hipatterns = require('mini.hipatterns')
+    hipatterns.setup({
+    highlighters = {
+      -- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
+      fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
+      hack  = { pattern = '%f[%w]()HACK()%f[%W]',  group = 'MiniHipatternsHack'  },
+      todo  = { pattern = '%f[%w]()TODO()%f[%W]',  group = 'MiniHipatternsTodo'  },
+      note  = { pattern = '%f[%w]()NOTE()%f[%W]',  group = 'MiniHipatternsNote'  },
+
+      -- Highlight hex color strings (`#rrggbb`) using that color
+      hex_color = hipatterns.gen_highlighter.hex_color(),
+    },
+  })
+  end, },
+  { 'nvim-mini/mini.icons', version = '*', opts = {}, },
+  { 'nvim-mini/mini.indentscope', version = '*', opts = {}, },
+  { 'nvim-mini/mini.jump', version = '*', opts = {}, },
+  { 'nvim-mini/mini.keymap', version = '*', opts = {}, },
+  { 'nvim-mini/mini.misc', version = '*', opts = {}, },
+  { 'nvim-mini/mini.move', version = '*', opts = {}, },
+  { 'nvim-mini/mini.notify', version = '*', opts = {}, },
+  { 'nvim-mini/mini.pairs', version = '*', opts = {}, },
+  { 'nvim-mini/mini.pairs', version = '*', opts = {}, },
+  { 'nvim-mini/mini.pick', version = '*', opts = {}, },
+  { 'nvim-mini/mini.sessions', version = '*', opts = {}, },
+  { 'nvim-mini/mini.splitjoin', version = '*', opts = {}, },
+  { 'nvim-mini/mini.starter', version = '*', opts = {}, },
+  { 'nvim-mini/mini.statusline', version = '*', opts = {}, },
+  { 'nvim-mini/mini.tabline', version = '*', opts = {}, },
+  {
+    "kylechui/nvim-surround",
+    version = "^3.0.0", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    opts = {},
+  }
+
 })
+
