@@ -6,6 +6,7 @@ idiomatic_version_file_enable_tools = ["python"]
 [tools]
 bat = "0.25.0"
 carapace = "1.5.2"
+helix = "25.07.1"
 jujutsu = "0.31.0"
 lua = "5.1"
 lua-language-server = "3.15.0"
