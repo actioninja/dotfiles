@@ -1,8 +1,7 @@
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
---system clipboard
-vim.opt.clipboard = "unnamedplus"
+
 --cmp junk
 vim.opt.completeopt = { "menuone", "noselect" }
 --no concealment (`` in md)
@@ -31,14 +30,20 @@ vim.opt.numberwidth = 4
 vim.opt.scrolloff = 8
 --scroll offset buffer horizontally
 vim.opt.sidescrolloff = 8
---bigger cmd bar
-vim.opt.cmdheight = 1
+-- wrap indents on same indent level
+vim.opt.breakindent = true
+-- prefer wrapping on whitespace
+vim.opt.linebreak = true
+-- don't show ~ out of buffer
+vim.opt.fillchars = "eob: "
 
 -- SPLITS --
 --horizontal splits go below
 vim.opt.splitbelow = true
 --vertical splits go right
 vim.opt.splitright = true
+--keep position of lines when closing splits
+vim.opt.splitkeep = "screen"
 
 -- SEARCHING --
 --highlight all matches in search
@@ -68,6 +73,12 @@ vim.opt.timeoutlen = 300
 --faster completion popup
 vim.opt.updatetime = 300
 
+-- EDITING --
+-- allow the cursor to go past the end of line in vblock
+vim.opt.virtualedit = "block"
+-- don't format comments
+vim.opt.formatoptions = "qjl1"
+
 -- TABS --
 --make indenting smarter
 vim.opt.smartindent = true
@@ -95,6 +106,24 @@ vim.opt.grepformat = "%f:%l:%c:%m"
 
 -- OTHER STUFF --
 vim.g.editorconfig = true
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = {
+    text = {
+        [vim.diagnostic.severity.ERROR] = ' ',
+        [vim.diagnostic.severity.WARN] = ' ',
+        [vim.diagnostic.severity.HINT] = ' ',
+        [vim.diagnostic.severity.INFO] = ' ',
+    },
+    linehl = {
+        [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+    },
+    numhl = {
+        [vim.diagnostic.severity.WARN] = 'WarningMsg',
+    },
+  },
+})
 
 -- neovide settings
 if vim.g.neovide then
