@@ -16,6 +16,7 @@
 	eol = lf
 [init]
 	defaultBranch = main
+	defaultRefFormat = files
 [commit]
 	verbose = true
 [diff]
