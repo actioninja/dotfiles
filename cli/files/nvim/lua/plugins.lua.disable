@@ -1,16 +1,3 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-
 require("lazy").setup({
   {
     "loganswartz/selenized.nvim",
@@ -192,13 +179,13 @@ require("lazy").setup({
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   },
-  { 'nvim-mini/mini.ai', version = '*', opts = {}, },
-  { 'nvim-mini/mini.align', version = '*', opts = {}, },
-  { 'nvim-mini/mini.bracketed', version = '*', opts = {}, },
-  { 'nvim-mini/mini.bufremove', version = '*', opts = {}, },
+  { 'nvim-mini/mini.ai', version = false, opts = {}, },
+  { 'nvim-mini/mini.align', version = false, opts = {}, },
+  { 'nvim-mini/mini.bracketed', version = false, opts = {}, },
+  { 'nvim-mini/mini.bufremove', version = false, opts = {}, },
   {
     'nvim-mini/mini.clue',
-    version = '*',
+    version = false,
     opts = {
       triggers = {
         -- Leader triggers
@@ -207,12 +194,12 @@ require("lazy").setup({
       },
     },
   },
-  { 'nvim-mini/mini.comment', version = '*', opts = {}, },
-  { 'nvim-mini/mini.cursorword', version = '*', opts = {}, },
-  { 'nvim-mini/mini.extra', version = '*', opts = {}, },
-  { 'nvim-mini/mini.fuzzy', version = '*', opts = {}, },
-  { 'nvim-mini/mini-git', version = '*', opts = {}, },
-  { 'nvim-mini/mini.hipatterns', version = '*', config = function()
+  { 'nvim-mini/mini.comment', version = false, opts = {}, },
+  { 'nvim-mini/mini.cursorword', version = false, opts = {}, },
+  { 'nvim-mini/mini.extra', version = false, opts = {}, },
+  { 'nvim-mini/mini.fuzzy', version = false, opts = {}, },
+  { 'nvim-mini/mini-git', version = false, config = function() require('mini.git').setup() end, },
+  { 'nvim-mini/mini.hipatterns', version = false, config = function()
     local hipatterns = require('mini.hipatterns')
     hipatterns.setup({
     highlighters = {
@@ -227,21 +214,21 @@ require("lazy").setup({
     },
   })
   end, },
-  { 'nvim-mini/mini.icons', version = '*', opts = {}, },
-  { 'nvim-mini/mini.indentscope', version = '*', opts = {}, },
-  { 'nvim-mini/mini.jump', version = '*', opts = {}, },
-  { 'nvim-mini/mini.keymap', version = '*', opts = {}, },
-  { 'nvim-mini/mini.misc', version = '*', opts = {}, },
-  { 'nvim-mini/mini.move', version = '*', opts = {}, },
-  { 'nvim-mini/mini.notify', version = '*', opts = {}, },
-  { 'nvim-mini/mini.pairs', version = '*', opts = {}, },
-  { 'nvim-mini/mini.pairs', version = '*', opts = {}, },
-  { 'nvim-mini/mini.pick', version = '*', opts = {}, },
-  { 'nvim-mini/mini.sessions', version = '*', opts = {}, },
-  { 'nvim-mini/mini.splitjoin', version = '*', opts = {}, },
-  { 'nvim-mini/mini.starter', version = '*', opts = {}, },
-  { 'nvim-mini/mini.statusline', version = '*', opts = {}, },
-  { 'nvim-mini/mini.tabline', version = '*', opts = {}, },
+  { 'nvim-mini/mini.icons', version = false, opts = {}, },
+  { 'nvim-mini/mini.indentscope', version = false, opts = {}, },
+  { 'nvim-mini/mini.jump', version = false, opts = {}, },
+  { 'nvim-mini/mini.keymap', version = false, opts = {}, },
+  { 'nvim-mini/mini.misc', version = false, opts = {}, },
+  { 'nvim-mini/mini.move', version = false, opts = {}, },
+  { 'nvim-mini/mini.notify', version = false, opts = {}, },
+  { 'nvim-mini/mini.pairs', version = false, opts = {}, },
+  { 'nvim-mini/mini.pairs', version = false, opts = {}, },
+  { 'nvim-mini/mini.pick', version = false, opts = {}, },
+  { 'nvim-mini/mini.sessions', version = false, opts = {}, },
+  { 'nvim-mini/mini.splitjoin', version = false, opts = {}, },
+  { 'nvim-mini/mini.starter', version = false, opts = {}, },
+  { 'nvim-mini/mini.statusline', version = false, opts = {}, },
+  { 'nvim-mini/mini.tabline', version = false, opts = {}, },
   {
     "kylechui/nvim-surround",
     version = "^3.0.0", -- Use for stability; omit to use `main` branch for the latest features
