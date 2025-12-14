@@ -127,6 +127,7 @@ vim.diagnostic.config({
 
 -- neovide settings
 if vim.g.neovide then
+  vim.g.neovide_theme = 'auto'
   vim.g.neovide_scroll_animation_length = 0.1
   vim.g.neovide_hide_mouse_when_typing = true
   vim.g.neovide_cursor_animate_in_insert_mode = true
