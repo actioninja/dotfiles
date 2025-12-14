@@ -24,7 +24,19 @@ return {
                 vim.cmd("cd " .. vim.fn.argv()[1])
               end
             end
-        })
+          })
+
+          local chadtree_settings = {
+            ["view.window_options"] = {
+              cursorline = true,
+              number = true,
+              relativenumber = true,
+              signcolumn = "no",
+              winfixwidth = true,
+              wrap = false
+            }
+          }
+          vim.api.nvim_set_var("chadtree_settings", chadtree_settings)
         end
     },
 }

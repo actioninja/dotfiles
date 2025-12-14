@@ -48,6 +48,21 @@ return {
         end,
       })
 
+      -- Then add an autocmd to auto-restart on crash:
+      vim.api.nvim_create_autocmd("LspDetach", {
+        callback = function(args)
+          local client = vim.lsp.get_client_by_id(args.data.client_id)
+          if client and client.name == "nixd" then
+            -- Small delay to avoid rapid restart loops
+            vim.defer_fn(function()
+              local buf = args.buf
+              if vim.api.nvim_buf_is_valid(buf) then
+                vim.cmd("LspStart nixd")
+              end
+            end, 1000)
+          end
+        end,
+      })
 
       vim.lsp.config('lua_ls', {
         on_init = function(client)

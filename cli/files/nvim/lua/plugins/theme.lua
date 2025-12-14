@@ -1,5 +1,5 @@
 return {
-    {
+  {
     "loganswartz/selenized.nvim",
     dependencies = {
       "rktjmp/lush.nvim",
@@ -14,5 +14,9 @@ return {
       vim.cmd.filetype("plugin indent on")
       vim.cmd.colorscheme("selenized")
     end
+  },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {}
   },
 }
