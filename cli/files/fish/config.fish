@@ -29,3 +29,4 @@ test -r $__fish_config_dir/dircolors; and eval (dircolors $__fish_config_dir/dir
 function __tide_mise_hack -v PWD
     _tide_remove_unusable_items
 end
+source /home/actioninja/.config/op/plugins.sh

@@ -94,6 +94,8 @@ bindnormal("gp", '"+p', "Paste from system clipboard")
 -- trick to not yank the selection as you paste in visual mode
 bindvisual("gp", '"+P', "Paste from system clipboard")
 
+bindinsert("<F15>", "<ESC>", "exit insert with rebound capslock")
+
 --sudohack
 bindcommand("w!!", "w !sudo tee > /dev/null %", "Write as root")
 
