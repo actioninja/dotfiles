@@ -1,5 +1,0 @@
----
-actions:
-  - action: file.link
-    from: fish
-    to: '{{user.config_dir}}/fish'

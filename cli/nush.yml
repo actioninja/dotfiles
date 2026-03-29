@@ -1,5 +1,0 @@
----
-actions:
-  - action: file.link
-    from: nushell
-    to: '{{user.config_dir}}/nushell'
