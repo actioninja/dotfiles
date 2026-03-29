@@ -20,6 +20,15 @@ vim.opt.cursorline = true
 vim.opt.number = true
 --enable relative line numbers|being set as well as "number" causes current line to be absolute and the rest to be relative
 vim.opt.relativenumber = true
+-- re-enforce for windows created by async plugins (chadtree, coq)
+autocmd('BufWinEnter', {
+  callback = function()
+    if vim.bo.buftype == '' then
+      vim.wo.number = true
+      vim.wo.relativenumber = true
+    end
+  end,
+})
 --hide partial cmd in last line of screen
 vim.opt.showcmd = false
 --hide line and column number in bottom right
@@ -80,8 +89,8 @@ vim.opt.virtualedit = "block"
 vim.opt.formatoptions = "qjl1"
 
 -- TABS --
---make indenting smarter
-vim.opt.smartindent = true
+--smartindent forces # to column 0; treesitter indent handles this properly
+vim.opt.smartindent = false
 --convert tabs to spaces
 vim.opt.expandtab = true
 --4 space wide tabs

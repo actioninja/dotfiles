@@ -1,6 +1,0 @@
----
-actions:
-  - action: file.link
-    to: '{{user.config_dir}}/git'
-    from: git
-
