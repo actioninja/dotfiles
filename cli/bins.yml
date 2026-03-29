@@ -1,5 +1,0 @@
----
-actions:
-  - action: file.link
-    from: bin
-    to: '{{user.home_dir}}/.local/bin'

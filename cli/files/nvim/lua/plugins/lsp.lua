@@ -13,6 +13,10 @@ return {
           enable = true,
           additional_vim_regex_highlighting = false,
         },
+
+        indent = {
+          enable = true,
+        },
     }
   },
   {
@@ -36,8 +40,8 @@ return {
     },
     init = function()
       vim.g.coq_settings = {
-          auto_start = 'shut-up', -- if you want to start COQ at startup
-          -- Your COQ settings here
+          auto_start = 'shut-up',
+          keymap = { recommended = false },
       }
     end,
     config = function()
