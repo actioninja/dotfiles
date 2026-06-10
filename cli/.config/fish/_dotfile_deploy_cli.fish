@@ -1,0 +1,10 @@
+mkdir -p ~/.config
+mkdir -p ~/.local
+mkdir -p ~/Projects
+mkdir -p ~/Downloads
+mkdir -p ~/.config/sublime-text/User
+dotfile_link cli/.local/bin ~/.local/bin
+dotfile_link cli/.config/git ~/.config/git
+dotfile_link cli/.config/cargo ~/.config/cargo
+dotfile_link cli/.config/jj ~/.config/jj
+dotfile_link cli/.config/fish ~/.config/fish
