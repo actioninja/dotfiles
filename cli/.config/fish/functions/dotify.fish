@@ -12,7 +12,7 @@ function dotify
     set relative_from_root (string sub -s (math (string length "$HOME"/) + 1) $target)
     mkdir -p $DOTFILE_HOME/$deployment/(path dirname $relative_from_root)
     mv $target $DOTFILE_HOME/$deployment/$relative_from_root
-    set link_command "dotify_link $deployment/$relative_from_root ~/$relative_from_root"
+    set link_command "dotfile_link $deployment/$relative_from_root ~/$relative_from_root"
     echo $link_command >> $DOTFILE_HOME/cli/.config/fish/_dotfile_deploy_"$deployment".fish
     eval $link_command
 end
