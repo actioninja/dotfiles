@@ -1,4 +1,6 @@
 function dotfile_link
-    rm -rf $argv[2]
-    ln -sfv "$DOTFILE_HOME"$argv[1] $argv[2]
+    set -l resolved (realpath -s $argv[2])
+    mkdir -p (path dirname $resolved)
+    rm -rf $resolved
+    ln -sfv "$DOTFILE_HOME"$argv[1] $resolved
 end

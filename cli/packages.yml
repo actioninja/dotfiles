@@ -1,9 +1,0 @@
----
-actions:
-  - action: package.install
-    provider: paru
-    list:
-      - neovim
-      - fortune-mod
-      - cowsay      
-      - lolcat
