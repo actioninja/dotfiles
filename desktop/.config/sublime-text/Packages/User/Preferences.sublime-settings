@@ -1,0 +1,31 @@
+{
+	"dark_theme": "Default Dark.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
+	"rulers": [90],
+	"translate_tabs_to_spaces": true,
+	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
+	"caret_style": "blink",
+	"scroll_context_lines": 7,
+	"draw_white_space": ["selection", "trailing", "isolated", "leading_mixed", "isolated_mixed"],
+	"indent_guide_options": ["draw_active"],
+	"trim_trailing_white_space_on_save": "not_on_caret",
+	"ensure_newline_at_eof_on_save": true,
+	"default_line_ending": "unix",
+	"highlight_modified_tabs": true,
+	"hardware_acceleration": "opengl",
+	"relative_line_numbers": true,
+
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"neovintageous_build_version": 13200,
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"vintageous_use_ctrl_keys": true,
+	"vintageous_enable_sneak": true,
+	"index_files": true,
+	"font_face": "Inconsolata",
+	"font_size": 13,
+}
