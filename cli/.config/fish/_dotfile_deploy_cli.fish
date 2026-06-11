@@ -8,3 +8,4 @@ dotfile_link cli/.config/git ~/.config/git
 dotfile_link cli/.config/cargo ~/.config/cargo
 dotfile_link cli/.config/jj ~/.config/jj
 dotfile_link cli/.config/fish ~/.config/fish
+dotfile_link cli/testfile ~/testfile
