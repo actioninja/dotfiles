@@ -1,0 +1,15 @@
+{
+    "nixd": {
+        "enabled": true,
+        "command": ["nixd"],
+        "selector": "source.nix"
+    },
+    "fish-lsp": {
+        "enabled": true,
+        "command": [
+            "fish-lsp",
+            "start"
+        ],
+        "selector": "source.fish"
+    }
+}

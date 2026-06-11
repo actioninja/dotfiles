@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"AutoSetSyntax",
+		"EasySettings",
+		"EditorConfig",
+		"fish",
+		"GitGutter",
+		"Gleam",
+		"Jujutsu",
+		"LSP",
+		"LSP-bash",
+		"LSP-file-watcher-rust",
+		"LSP-json",
+		"LSP-taplo",
+		"LSP-yaml",
+		"NeoVintageous",
+		"NeoVintageousFiles",
+		"Nix",
+		"Origami",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Terraform",
+	],
+	"channels":
+	[
+		"https://packages.sublimetext.io/channel.json",
+	],
+	"repositories":
+	[
+	],
+}
