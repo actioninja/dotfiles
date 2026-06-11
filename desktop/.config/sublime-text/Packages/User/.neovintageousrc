@@ -1,0 +1,8 @@
+" A double quote character starts a comment.
+let mapleader=" "
+
+nnoremap <Leader><Tab> :Neovintageous action=toggle_side_bar<CR>
+
+nnoremap gp "+p
+nnoremap gy "+y
+vnoremap gy "+y
