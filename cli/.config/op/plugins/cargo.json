@@ -1,0 +1,15 @@
+{
+	"account_id": "HYQNRKR74VF67LGWH3H24QEJOY",
+	"entrypoint": [
+		"cargo"
+	],
+	"credentials": [
+		{
+			"plugin": "cargo",
+			"credential_type": "api_token",
+			"usage_id": "api_token",
+			"vault_id": "unaqjhjgfeco6twqp2czygmhra",
+			"item_id": "flineqe5bdwv24in6wzkxxlbma"
+		}
+	]
+}
