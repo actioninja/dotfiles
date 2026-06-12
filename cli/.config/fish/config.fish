@@ -16,7 +16,9 @@ if command -q nix-your-shell
     nix-your-shell fish | source
 end
 
-mise activate fish | source
+if command -q mise
+    mise activate fish | source
+end
 
 set -Ux CARAPACE_BRIDGES 'fish'
 carapace _carapace fish | source
