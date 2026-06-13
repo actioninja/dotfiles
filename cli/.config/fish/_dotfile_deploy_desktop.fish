@@ -5,3 +5,4 @@ dotfile_link desktop/.config/sublime-text/Packages/User ~/.config/sublime-text/P
 dotfile_link desktop/.config/SeaDrive ~/.config/SeaDrive
 dotfile_link desktop/.config/krokiet ~/.config/krokiet
 dotfile_link desktop/.config/fontconfig ~/.config/fontconfig
+dotfile_link desktop/.config/foot ~/.config/foot
