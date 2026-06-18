@@ -1,0 +1,425 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"r",
+				"relative_from_root"
+			],
+			[
+				"re",
+				"relative_from_root"
+			],
+			[
+				"do",
+				"deployment"
+			],
+			[
+				"resol",
+				"resolved"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"nix",
+				"SubliminalREPL: Nix"
+			],
+			[
+				"sublim",
+				"SubliminalREPL: Lua"
+			],
+			[
+				"subliminnix",
+				"SubliminalREPL: Nix"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade All Packages"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade All Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"repos",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"package control upd",
+				"Package Control: Upgrade All Packages"
+			],
+			[
+				"open n",
+				"NeoVintageous: Open .neovintageousrc file"
+			],
+			[
+				"neovin",
+				"Preferences: NeoVintageous Settings"
+			],
+			[
+				"settings",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 548.0,
+		"history":
+		[
+			"view.settings().get('color_scheme')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/actioninja/.dotfiles"
+	],
+	"file_history":
+	[
+		"/home/actioninja/projects/infernov3/modules/services/reverse-proxy.nix",
+		"/home/actioninja/.dotfiles/cli/.config/fish/functions/dotfile_deploy.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/functions/cowfortune.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/config.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/_dotfile_deploy_desktop.fish",
+		"/home/actioninja/.dotfiles/desktop/.config/foot/foot.ini",
+		"/home/actioninja/.dotfiles/cli/.config/fish/conf.d/op.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/_dotfile_deploy_cli.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/functions/dotify.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/functions/dotfile_addbin.fish",
+		"/home/actioninja/.dotfiles/cli/.config/fish/functions/dotfile_link.fish",
+		"/home/actioninja/.dotfiles/cli/.local/bin/.gitignore",
+		"/home/actioninja/.dotfiles/bootstrap.sh",
+		"/home/actioninja/.dotfiles/LICENSE.md",
+		"/home/actioninja/.dotfiles/desktop/files/kitty/kitty.conf",
+		"/home/actioninja/.dotfiles/AGENTS.md",
+		"/home/actioninja/.dotfiles/CLAUDE.md",
+		"/home/actioninja/.dotfiles/dotfiles.fish",
+		"/home/actioninja/.dotfiles/cli/config/fish/conf.d/abbrs.fish",
+		"/home/actioninja/.dotfiles/cli/config/fish/functions/link_dotfile.fish",
+		"/home/actioninja/.dotfiles/cli/config/fish/functions/fish_reload.fish",
+		"/home/actioninja/.dotfiles/dotify.fish",
+		"/home/actioninja/.dotfiles/cli/files/fish/config.fish",
+		"/home/actioninja/.dotfiles/cli/files/fish/fish_plugins",
+		"/home/actioninja/.dotfiles/cli/files/fish/fish_variables",
+		"/home/actioninja/.dotfiles/cli/files/fish/functions/dotfile_link.fish",
+		"/home/actioninja/projects/SubliminalREPL/config/Haskell/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Nix/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Nix/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/run_existing_command.py",
+		"/home/actioninja/projects/SubliminalREPL/packages.json",
+		"/home/actioninja/projects/SubliminalREPL/config/Tower/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Tower/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Sublime/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Sublime/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/SML/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/SML/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Shell/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Shell/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/ScriptCS/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ScriptCS/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Scheme/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Scheme/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Scala/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Scala/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Rust/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Rust/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Ruby/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Ruby/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Rails/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Rails/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Racket/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Racket/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/R/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/R/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Python/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Python/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Prolog/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Prolog/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/PowerShell/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/PowerShell/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/PHP/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/PHP/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Perl/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Perl/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Octave/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Octave/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/OCaml/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/OCaml/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/NodeJS/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/NodeJS/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/MozRepl/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/MozRepl/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Maxima/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Maxima/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Matlab/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Matlab/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Main.sublime-menu.template",
+		"/home/actioninja/projects/SubliminalREPL/config/Lua/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Lua/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Java/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Java/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Io/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Io/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Idris/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Idris/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Haskell/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Groovy/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Groovy/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/GDB/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/GDB/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/F/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/F/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Execnet/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Execnet/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Erlang/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Erlang/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Elixir/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Elixir/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/CommonLisp/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/CommonLisp/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/CoffeeScript/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/CoffeeScript/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/ClojureScript/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ClojureScript/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/ClojureRemote/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ClojureRemote/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/Clojure/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/Clojure/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/ClaferIG/IGS.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ClaferIG/IGM.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ClaferIG/IGF.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ClaferIG/IGC.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/ClaferIG/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/config/C++/Main.sublime-menu",
+		"/home/actioninja/projects/SubliminalREPL/config/C++/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/completions.py",
+		"/home/actioninja/projects/SubliminalREPL/LICENSE.TXT",
+		"/home/actioninja/projects/SubliminalREPL/LICENSE-LIB.txt",
+		"/home/actioninja/projects/SubliminalREPL/lang_integration.py",
+		"/home/actioninja/projects/SubliminalREPL/doc/Makefile",
+		"/home/actioninja/projects/SubliminalREPL/doc/make.bat",
+		"/home/actioninja/projects/SubliminalREPL/doc/index.rst",
+		"/home/actioninja/projects/SubliminalREPL/doc/conf.py",
+		"/home/actioninja/projects/SubliminalREPL/Default.sublime-commands",
+		"/home/actioninja/projects/SubliminalREPL/text_transfer.py",
+		"/home/actioninja/projects/SubliminalREPL/sublimerepl_build_system_hack.sublime-build",
+		"/home/actioninja/projects/SubliminalREPL/sublimerepl_build_system_hack.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.AutoSetSyntax":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "dotfiles.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 338.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
